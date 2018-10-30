@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="RoundedCornerLayout">
+        <attr name="orientation"/>
+        <attr name="background_color" />
+        <attr name="background_color_selected" />
+        <attr name="border_color" format="color" />
+        <attr name="corner_radius" format="dimension"/>
+        <attr name="corner_radius_top_start" format="dimension"/>
+        <attr name="corner_radius_top_end" format="dimension"/>
+        <attr name="corner_radius_bottom_start" format="dimension"/>
+        <attr name="corner_radius_bottom_end" format="dimension"/>
+        <attr name="border_elevation" format="dimension"/>
+        <attr name="border_elevation_top" format="dimension"/>
+        <attr name="border_elevation_bottom" format="dimension"/>
+        <attr name="border_elevation_end" format="dimension"/>
+        <attr name="border_elevation_start" format="dimension"/>
+        <attr name="percentile_height" format="float"/>
+        <attr name="percentile_width" format="float"/>
+    </declare-styleable>
+
+    <attr name="background_color" format="color" />
+    <attr name="background_color_selected" format="color" />
+    <attr name="orientation">
+        <enum name="horizontal" value="0" />
+        <enum name="vertical" value="1" />
+    </attr>
+
+</resources>

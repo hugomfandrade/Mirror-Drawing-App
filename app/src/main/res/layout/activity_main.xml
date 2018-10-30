@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rl_fab">
+
+    <org.hugoandrade.mirrordrawing.DrawingView
+        android:id="@+id/drawingView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+    <ImageView
+        android:id="@+id/iv_close"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:tint="@color/colorAccent"
+        android:src="@android:drawable/ic_menu_close_clear_cancel"/>
+
+    <org.hugoandrade.mirrordrawing.RoundedCornerLayout
+        android:visibility="invisible"
+        android:id="@+id/rcl_divider"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal"
+        android:clickable="false"
+        app:corner_radius="5dp"
+        app:border_elevation_bottom="2dp"
+        app:background_color="#dcdcdc"
+        >
+
+        <org.hugoandrade.mirrordrawing.RoundedCornerLayout
+            android:layout_width="46dp"
+            android:layout_height="match_parent"
+            app:percentile_height="100">
+
+            <ImageView
+                android:id="@+id/iv_divider_minus"
+                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:adjustViewBounds="true"
+                android:src="@drawable/ic_minus"
+                android:background="?attr/selectableItemBackground"/>
+
+        </org.hugoandrade.mirrordrawing.RoundedCornerLayout>
+
+
+        <org.hugoandrade.mirrordrawing.RoundedCornerLayout
+            android:layout_width="46dp"
+            android:layout_height="match_parent"
+            app:percentile_height="100">
+
+            <TextView
+                android:id="@+id/tv_divider_number"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/white"
+                android:text="0"
+                android:gravity="center"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                />
+
+        </org.hugoandrade.mirrordrawing.RoundedCornerLayout>
+
+        <org.hugoandrade.mirrordrawing.RoundedCornerLayout
+            android:layout_width="46dp"
+            android:layout_height="match_parent"
+            app:percentile_height="100">
+
+            <ImageView
+                android:id="@+id/iv_divider_plus"
+                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:adjustViewBounds="true"
+                android:src="@drawable/ic_plus"
+                android:background="?attr/selectableItemBackground" />
+
+        </org.hugoandrade.mirrordrawing.RoundedCornerLayout>
+
+
+    </org.hugoandrade.mirrordrawing.RoundedCornerLayout>
+
+    <!-- -->
+
+    <org.hugoandrade.mirrordrawing.RoundedCornerLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal"
+        android:clickable="false"
+        app:corner_radius="5dp"
+        app:border_elevation_bottom="2dp"
+        app:background_color="#dcdcdc"
+        >
+
+        <org.hugoandrade.mirrordrawing.RoundedCornerLayout
+            android:layout_width="46dp"
+            android:layout_height="match_parent"
+            app:percentile_height="100">
+
+            <ImageView
+                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:adjustViewBounds="true"
+                android:src="@drawable/ic_undo"
+                android:background="?attr/selectableItemBackground"/>
+
+        </org.hugoandrade.mirrordrawing.RoundedCornerLayout>
+
+        <org.hugoandrade.mirrordrawing.RoundedCornerLayout
+            android:layout_width="46dp"
+            android:layout_height="match_parent"
+            app:percentile_height="100">
+
+            <ImageView
+                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:adjustViewBounds="true"
+                android:src="@drawable/ic_undo"
+                android:background="?attr/selectableItemBackground"
+                android:scaleX="-1"/>
+
+        </org.hugoandrade.mirrordrawing.RoundedCornerLayout>
+
+        <org.hugoandrade.mirrordrawing.RoundedCornerLayout
+            android:layout_width="46dp"
+            android:layout_height="match_parent"
+            app:percentile_height="100">
+
+            <ImageView
+                android:id="@+id/iv_divider"
+                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:adjustViewBounds="true"
+                android:src="@drawable/ic_divider"
+                android:background="?attr/selectableItemBackground" />
+
+        </org.hugoandrade.mirrordrawing.RoundedCornerLayout>
+
+
+    </org.hugoandrade.mirrordrawing.RoundedCornerLayout>
+
+    <!-- -->
+
+
+</RelativeLayout>
